@@ -2,7 +2,7 @@
     "name": "Tab Counter",
     "description": "Counts the number of tabs and sets a maximum limit of 10 tabs.",
     "version": "1.0",
-    "manifest_version": 2,
+    "manifest_version": 3,
     "permissions": [
       "tabs"
     ]
