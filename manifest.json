@@ -1,8 +1,18 @@
-{
-    "name": "Tab Counter",
-    "description": "Counts the number of tabs and sets a maximum limit of 10 tabs.",
-    "version": "1.0",
+
+  {
     "manifest_version": 3,
+    "name": "Tab Counter",
+    "version": "1.0",
+    "description": "An extension that counts the number of tabs and limits to a maximum of 10 tabs",
+    "icons": {
+      "16": "icon-16.png",
+      "48": "icon-48.png",
+      "128": "icon-128.png"
+    },
+    "browser_action": {
+      "default_icon": "icon-48.png",
+      "default_popup": "popup.html"
+    },
     "permissions": [
       "tabs"
     ]

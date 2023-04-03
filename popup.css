@@ -1,6 +1,15 @@
-#tabCount {
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 20px;
-  }
+body {
+  width: 200px;
+  height: 100px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+}
+
+#tab-counter {
+  font-weight: bold;
+  color: #333;
+}

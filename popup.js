@@ -1,24 +1,14 @@
-// Set the maximum number of tabs
-const MAX_TABS = 10;
-
-// Count the number of tabs and display it in the popup
+// Count the number of tabs
 chrome.tabs.query({}, function(tabs) {
-  const tabCount = tabs.length;
-  const tabCountDiv = document.getElementById("tabCount");
-  tabCountDiv.textContent = "You have " + tabCount + " tabs open.";
+  var count = tabs.length;
 
-  // Prevent the user from opening more than the maximum number of tabs
-  if (tabCount >= MAX_TABS) {
-    const newTabButton = document.createElement("button");
-    newTabButton.textContent = "New Tab";
-    newTabButton.disabled = true;
-    tabCountDiv.appendChild(newTabButton);
+  // If there are more than 10 tabs, close the current tab
+  if (count > 10) {
+    chrome.tabs.getCurrent(function(tab) {
+      chrome.tabs.remove(tab.id);
+    });
   }
-});
 
-// Listen for clicks on the "New Tab" button and open a new tab
-document.getElementById("tabCount").addEventListener("click", function(event) {
-  if (event.target.tagName === "BUTTON") {
-    chrome.tabs.create({});
-  }
+  // Update the tab counter in the popup
+  document.getElementById("tab-counter").textContent = count;
 });
