@@ -1,6 +1,6 @@
 
   {
-    "manifest_version": 3,
+    "manifest_version": 2,
     "name": "Tab Counter",
     "version": "1.0",
     "description": "An extension that counts the number of tabs and limits to a maximum of 10 tabs",
