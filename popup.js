@@ -10,7 +10,8 @@ chrome.tabs.onCreated.addListener(function(tab) {
     
     if (tabs.length > MAX_TABS) {
       console.log("Too many tabs!");
-      chrome.tabs.remove(tab.id);
+        alert("Tab limit of 10 exceeded!");
+        chrome.tabs.remove(tabs[0].id);
       
       chrome.notifications.create({
         type: "basic",
