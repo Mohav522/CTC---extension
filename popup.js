@@ -4,8 +4,12 @@ chrome.tabs.query({}, function(tabs) {
 
   const MAX_TABS = 10;
 
-// Listen for new tab created
-chrome.tabs.onCreated.addListener(function(tab) {
+  function onTabCreated(tab) {
+    // your code here
+  }
+  
+  chrome.tabs.onCreated.addListener(onTabCreated);
+  
   // Get all tabs in the current window
   chrome.tabs.query({currentWindow: true}, function(tabs) {
     // Check if the number of tabs exceeds the maximum
@@ -25,5 +29,6 @@ chrome.tabs.onCreated.addListener(function(tab) {
 
 
   // Update the tab counter in the popup
-  document.getElementById("tab-counter").textContent = count;
-});
+  { 
+    document.getElementById("tab-counter").textContent = count;
+};
