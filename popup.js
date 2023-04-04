@@ -19,7 +19,7 @@ chrome.tabs.onCreated.addListener(function(tab) {
     }
   });
 });
+  chrome.tabs.onCreated.addListener(onTabsCreated);
 
   document.getElementById("tab-counter").textContent = count;
 });
-
