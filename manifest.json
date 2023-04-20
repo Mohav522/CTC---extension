@@ -17,7 +17,7 @@
     },
 
     "background": {
-      "scripts": ["CTC---extension/blob/main/background.js"],
+      "scripts": ["CTC---extension/background.js "],
       "persistent": false
     },
 
