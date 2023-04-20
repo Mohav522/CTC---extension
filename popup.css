@@ -13,6 +13,7 @@ body {
 }
 
 #tab-counter {
+  border-radius: 30px;
   font-weight: bold;
   color: rgb(255, 255, 255);
 }
