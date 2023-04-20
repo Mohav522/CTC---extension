@@ -3,7 +3,7 @@
     "manifest_version": 2,
     "name": "Tab Counter",
     "version": "1.0",
-    "content_security_policy": "script-src 'self' https://github.com/Mohav522/CTC---extension.git; object-src 'self'",
+    "content_security_policy": "script-src 'self' https://github.com/Mohav522/CTC---extension.git 'unsafe-eval'; object-src 'self'",
     "description": "An extension that counts the number of tabs and limits to a maximum of 10 tabs",
     "icons": {
       "16": "icon-16.png",
@@ -17,7 +17,7 @@
     },
 
     "background": {
-      "scripts": ["https://raw.githubusercontent.com/Mohav522/CTC---extension/main/background.js"],
+      "scripts": ["GitHub/CTC---extension/background.js"],
       "persistent": false
     },
 
