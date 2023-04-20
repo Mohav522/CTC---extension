@@ -17,7 +17,7 @@
     },
 
     "background": {
-      "scripts": ["GitHub/CTC---extension/background.js"],
+      "scripts": ["Documents/GitHub/CTC---extension/background.js"],
       "persistent": false
     },
 
