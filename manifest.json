@@ -18,8 +18,7 @@
 
     "permissions": [
       "activeTab", 
-      "tabs",
-      "removetab"
+      "tabs"
     ]
   }
   
