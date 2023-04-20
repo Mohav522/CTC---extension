@@ -14,9 +14,17 @@
       "default_icon": "icon-48.png",
       "default_popup": "popup.html"
     },
+
+    "background": {
+      "scripts": ["CTC---extension/background.js"],
+      "persistent": false
+    },
+
     "permissions": [
       "activeTab", 
       "tabs"
     ]
   }
+  
+   
   
