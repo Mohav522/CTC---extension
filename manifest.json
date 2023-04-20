@@ -16,11 +16,6 @@
       "default_title": "CTC---Extension"
     },
 
-    "background": {
-      "scripts": ["https://raw.githubusercontent.com/Mohav522/CTC---extension/main/background.js"],
-      "persistent": false
-    },
-
     "permissions": [
       "activeTab", 
       "tabs",
