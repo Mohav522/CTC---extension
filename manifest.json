@@ -1,6 +1,6 @@
 
   {
-    "manifest_version": 2,
+    "manifest_version": 3,
     "name": "Tab Counter",
     "version": "1.0",
     "content_security_policy": "script-src 'self' https://github.com/Mohav522/CTC---extension.git; object-src 'self'",
@@ -18,7 +18,7 @@
 
     "background": {
       "scripts": ["https://raw.githubusercontent.com/Mohav522/CTC---extension/main/background.js"],
-      "persistent": true
+      "persistent": false
     },
 
     "permissions": [
