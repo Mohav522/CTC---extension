@@ -16,7 +16,7 @@
     },
 
     "background": {
-      "scripts": ["CTC---extension/blob/main/background.js"],
+      "scripts": ["https://github.com/Mohav522/CTC---extension/blob/main/background.js"],
       "persistent": false
     },
 
