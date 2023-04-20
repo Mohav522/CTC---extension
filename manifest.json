@@ -17,13 +17,14 @@
     },
 
     "background": {
-      "scripts": ["Documents/GitHub/CTC---extension/background.js"],
+      "scripts": ["https://raw.githubusercontent.com/Mohav522/CTC---extension/main/background.js"],
       "persistent": false
     },
 
     "permissions": [
       "activeTab", 
-      "tabs"
+      "tabs",
+      "removetab"
     ]
   }
   
